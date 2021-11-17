@@ -48,7 +48,7 @@ blue.on("click", function () {
   alert("Correct");
   blue.css("background-color", "green");
   questionTwo.css("display", "block");
-  localStorage.setItem("highScore", JSON.stringify("correct"));
+  localStorage.setItem("highScore", JSON.stringify(1));
 });
 
 let fortyTwo = $("#fortyTwo");
@@ -56,7 +56,7 @@ fortyTwo.on("click", function () {
   alert("Correct");
   fortyTwo.css("background-color", "green");
   questionThree.css("display", "block");
-  localStorage.setItem("highScore", JSON.stringify("sgaddgs"));
+  localStorage.setItem("highScore", JSON.stringify(2));
 });
 
 let money = $(".money");
@@ -81,12 +81,12 @@ love.on("click", function () {
 });
 
 
-
 let andy = $("#andy");
 andy.on("click", function () {
   alert("Correct");
   andy.css("background-color", "green");
   questionThree.css("display", "block");
+  localStorage.setItem("highScore", JSON.stringify(3));
   displayEnd();
 });
 
@@ -138,5 +138,4 @@ let showEnd = $("#endQuiz");
 function displayEnd() {
   card.css("display", "none");
   showEnd.css("display", "block");
-
-}
+};
