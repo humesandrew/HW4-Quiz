@@ -87,24 +87,28 @@ andy.on("click", function () {
   alert("Correct");
   andy.css("background-color", "green");
   questionThree.css("display", "block");
+  displayEnd();
 });
 
 let bigBird = $(".bigBird");
 bigBird.on("click", function () {
     alert("Incorrect");
     bigBird.css("background-color", "red");
+    displayEnd(); 
 });
 
 let batman = $(".batman");
 batman.on("click", function () {
     alert("Incorrect");
     batman.css("background-color", "red");
+    displayEnd();
 });
 
 let mrMagoo = $(".mrMagoo");
 mrMagoo.on("click", function () {
     alert("Incorrect");
     mrMagoo.css("background-color", "red");
+    displayEnd();
 });
 
 let highScore = $("#highScore");
@@ -126,4 +130,13 @@ function timerCountdown() {
       navBarText.text("You failed.");
     }
   }, 1000);
+}
+
+let card = $(".card");
+let showEnd = $("#endQuiz");
+
+function displayEnd() {
+  card.css("display", "none");
+  showEnd.css("display", "block");
+
 }
