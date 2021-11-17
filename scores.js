@@ -1,6 +1,6 @@
 
 const finalScore = $("#finalScore");
-
+const displayHighScore = $("#highScore");
 
 
 function getFinalScore() {
