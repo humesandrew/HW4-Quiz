@@ -1,4 +1,18 @@
 const blue = $('#blue');
+
+let welcome = $('#welcome');
+let begin = $('#begin');
+
+begin.on('click', function() 
+{
+questionOne.css('display', 'block');
+welcome.css('display', 'none');
+
+});
+
+let questionOne = $('#questionOne');
+questionOne.css('display', 'none');
+
 let questionTwo = $('#questionTwo');
 questionTwo.css('display', 'none');
 
